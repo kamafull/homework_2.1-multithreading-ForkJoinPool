@@ -7,7 +7,6 @@ import org.openjdk.jmh.runner.options.TimeValue;
 import java.util.concurrent.TimeUnit;
 
 public class BenchmarkRunner {
-
     public static void main(String[] args) throws Exception {
         final var options = new OptionsBuilder()
                 .measurementIterations(2)
@@ -19,5 +18,4 @@ public class BenchmarkRunner {
                 .build();
         new Runner(options).run();
     }
-
 }
